@@ -1,0 +1,84 @@
+#login_section {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+#logobota{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+#login_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: #000000;
+    gap: 10px;
+}
+
+#senha_input_field {
+    width: 150px;
+    padding: 5px;
+    margin: 5px auto;
+    border: 1px solid #292929;
+    font-size: 14px;
+    font-family: Andale Mono, monospace;
+}
+
+#login_btn {
+    width: 70px;
+    padding: 5px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Andale Mono, monospace;
+    transition: background-color 0.3s
+}
+
+#login_btn:hover {
+    background-color: #b30000;
+}
+
+@media (max-width: 768px) {
+    #login_section {
+        left: 50%;
+        top: 60%;
+        transform: translateX(-50%);
+    }
+
+    #logobota {
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+
+    #login_card {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #senha_input_field {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    #login_btn {
+        width: 50%;
+        font-size: 12px;
+    }
+}
